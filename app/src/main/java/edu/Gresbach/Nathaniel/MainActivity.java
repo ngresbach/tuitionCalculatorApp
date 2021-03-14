@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 costPerCredit = Double.parseDouble(costPerCredText.getText( ).toString( ));
                 numberOfCredits = Integer.parseInt(numOfCredText.getText( ).toString( ));
                 semesterSelected = group.getSelectedItem( ).toString( );
-                totalCostSemester = numberOfCredits * costPerCredit;
+                totalCostSemester = (numberOfCredits * costPerCredit) + 125; // $125 Technology fee
                 DecimalFormat currency = new DecimalFormat("$###,###.##");
 
                 String resultText = "Your total cost for the " + semesterSelected +

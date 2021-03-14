@@ -4,5 +4,6 @@
 	<string-array name="semesterArray">
 		<item>Fall</item>
 		<item>Spring</item>
+		<item>Summer</item>
 	</string-array>
 </resources>

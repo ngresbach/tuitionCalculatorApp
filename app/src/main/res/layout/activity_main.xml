@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="UWM Cost of Attendance"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/imageView"
+        tools:layout_editor_absoluteY="234dp" />
+
+    <EditText
+        android:id="@+id/costPerCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="319dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/numberOfCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="390dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Cost per credit:"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/costPerCredit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Number of credits:"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="373dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="570dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView5"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo"
+        />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click the button below to calculate:"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="521dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/spinner"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/numberOfCredits"
+        android:spinnerMode="dialog"
+        android:prompt="@string/prompt"
+        android:entries="@array/semesterArray"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tuition App</string>
+	<string name="prompt">Please select a semester</string>
+	<string-array name="semesterArray">
+		<item>Fall</item>
+		<item>Spring</item>
+	</string-array>
+</resources>
